@@ -3,6 +3,7 @@
 %bcond_without	static_libs	# don't build static library
 
 Summary:	NetSurf public suffix list handling
+Summary(pl.UTF-8):	Obsługa listy przyrostków publicznych (Public Suffix List) dla projektu NetSurf
 Name:		libnspsl
 Version:	0.1.0
 Release:	1
@@ -16,9 +17,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The public suffix list is a database of top level domain names
-(https://publicsuffix.org). The database allows an application to
+(https://publicsuffix.org/). The database allows an application to
 determine if if a domain name requires an additional label to be
 valid.
+
+%description -l pl.UTF-8
+Lista przyrostków publicznych (Public Suffix List) to baza danych nazw
+domen głównego poziomu (https://publicsuffix.org/). Baza pozwala
+aplikacjom określić, czy nazwa domeny wymaga dodatkowej etykiety, aby
+była poprawna.
 
 %package devel
 Summary:	libnspsl library headers
