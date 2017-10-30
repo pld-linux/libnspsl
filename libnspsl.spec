@@ -5,14 +5,14 @@
 Summary:	NetSurf public suffix list handling
 Summary(pl.UTF-8):	Obsługa listy przyrostków publicznych (Public Suffix List) dla projektu NetSurf
 Name:		libnspsl
-Version:	0.1.0
+Version:	0.1.2
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	http://download.netsurf-browser.org/libs/releases/%{name}-%{version}-src.tar.gz
-# Source0-md5:	b09c9141bc157bf486a6950d2a5df58b
+# Source0-md5:	f1a5b04a0933f875e4c7c99a364b8e99
 URL:		http://www.netsurf-browser.org/projects/libnspsl/
-BuildRequires:	netsurf-buildsystem >= 1.5
+BuildRequires:	netsurf-buildsystem >= 1.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
